@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--bootstrap--%>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <%--font awsome--%>
+    <link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/all.min.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/brands.min.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/svg-with-js.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/solid.min.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/v4-shims.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/v4-shims.min.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/svg-with-js.min.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/solid.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/svg-with-js.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/regular.min.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/regular.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.12.1-web/css/fontawesome.min.css" rel="stylesheet" />
+    <style>
+        font{
+            font-Family:Arial;
+        }
+        #log-form{
+            padding-top:50px;
+            padding-bottom:50px;
+            background-color:#f3f3f3;
+        }
+        body {
+             background-color:#303030;
+        }
+        #playlist{
+            list-style: none;
+        }
+        #playlist .a{
+            color:black;
+            text-decoration: none;
+        }
+        .aa{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+        .padding-0{
+            padding-right:0;
+            padding-left:0;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="Default.aspx"><i style="font-size:xx-large;" class="fas fa-compact-disc text-success"><font>RonSong</font></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Default.aspx">Home</a>
+                    </li>
+                    <li runat="server" id="Songs" class="nav-item">
+                        <a class="nav-link" href="SongTypes.aspx">Song Types</a>
+                    </li>
+                    <li runat="server" id="login" class="nav-item">
+                        <a class="nav-link" href="Login.aspx">Login</a>
+                    </li>
+                    <li runat="server" id="register" class="nav-item">
+                        <a class="nav-link" href="Register.aspx">Register</a>
+                    </li>
+                    <li runat="server" id="AdminPage" class="nav-item">
+                        <a runat="server" href="Admin.aspx" class="nav-link" >Admin</a>
+                    </li>
+                    <li runat="server" id="signOut" class="nav-item">
+                        <a runat="server" class="nav-link" onserverclick="signOut_Click">SignOut</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br />
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
