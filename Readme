@@ -5,3 +5,4 @@ anthem. and each of these pages has different songs each of which has a button f
 of the song.
 admins can create different genres and add different songs.
 The site is designed to meet the demand of people who want to listen to songs while they are playing and the songs will move automatically.
+this website was built using c#, asp.net, javascript, sql
