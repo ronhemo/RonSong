@@ -1,7 +1,9 @@
 hi.
-this site is my 11th grade final project. written using c#, javascript, asp.net,css(with help from bootsrap 4)
+this site is my 11th grade final project.
 The site contains different genres of songs and provides information on all kinds of songs. The site has three types of songs genres: pop, rock and 
-anthem. and each of these pages has different songs each of which has a button for more information to the user More information about the common song, song, and lyrics
+anthem. and each of these pages has different songs each of which has a button for more information to the user about the song and lyrics
 of the song.
 admins can create different genres and add different songs.
-The site is designed to meet the demand of people who want to listen to songs while they are playing and the songs will move automatically.
+The site is designed to meet the demand of people who want to listen to songs while they are playing and the songs will play automatically.
+
+(a picture of a playlist for demonstration)
