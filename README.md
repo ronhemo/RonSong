@@ -9,3 +9,6 @@ The site is designed to meet the demand of people who want to listen to songs wh
 
 (a picture of a playlist for demonstration)
 ![image](https://user-images.githubusercontent.com/70100622/178855647-d5689116-cc75-4388-9770-2c0cfb218637.png)
+
+(a picture of the playlists list)
+![image](https://user-images.githubusercontent.com/70100622/180658545-e7026c3e-894e-45e4-8917-540a73859dc3.png)
